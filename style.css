@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background-color: #000000;
+}
+
+#game-board {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#game-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#instructions {
+  padding: 10px;
+}
+
+#rover-info {
+  padding-left: 30px;
+}
+
+#rover-info > p {
+  font-weight: bold;
+}
+
+#rover-info > p > span {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-start {
+  margin-top: 10px;
+  background-color: #41fa12;
+  border: 3px solid #2f9400;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-stop {
+  margin-top: 10px;
+  background-color: #ec0000;
+  border: 3px solid #920202;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-start:focus, .btn-stop:focus {
+  outline: 0;
+}
+

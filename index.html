@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Rover Challenge</title>
+</head>
+<body>
+  <section id="game-section">
+    <div>
+      <div id="instructions">
+        <p>Para executar as funções do Rover (usando o Google Chrome):</p>
+        <ol>
+          <li>Execute o jogo, clicando no botão verde</li>
+          <li>Abra o console (CTRL + SHIFT + I)</li>
+          <li>Para executar a função moveForward, digite: board.rover.moveForward()</li>
+          <li>Aperte <b>Enter</b></li>
+        </ol>
+      </div>
+      <div id="rover-info">
+        <p>Rover Name is: <span id="rover-name"></span></p>
+        <p>Rover position is: <span id="rover-position"></span></p>
+        <p>Rover direction is: <span id="rover-direction"></span></p>
+      </div>
+    </div>
+    <div id="game-board">
+      <canvas width="500" height="500" id="main-board">
+        Your browser doesn't support Canvas!
+      </canvas>
+      <button id="start-game-btn" class="btn-start">Start Game</button>
+    </div>
+  </section>
+  <script src="js/movement/rover.js"></script>
+  <script src="js/game/canvas.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
