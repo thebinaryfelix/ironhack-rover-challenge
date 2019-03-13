@@ -4,14 +4,20 @@ class Rover {
     this.board = board;
     this.width = 30;
     this.height = 30;
+    this.pos = [this.x, this.y];
     this.positionIncrement = 10;
     
     // SIGA AS INSTRUÇÕES COMENTADAS A SEGUIR
     
     // Rover inicia na posição 'N'
     this.dir;
-    // 'pos' é um Array, onde a posição [0] representará a coordenada X e [1] a coordenada Y
-    this.pos = [];
+    
+    // Crie duas propriedades: x e y que receberão as posições iniciais do rover.
+    // Lembre-se de usar 'this' antes das propriedades
+    // ***
+
+
+    // *** Crie aqui a propriedade travelLog para armazenar as posições por onde o rover esteve
   }
 
   // Complete a função de virar o rover para a esquerda
@@ -21,7 +27,6 @@ class Rover {
     
 
 
-    // ***
     return 'turnLeft() was called!';
   }
 
@@ -32,7 +37,6 @@ class Rover {
     
 
 
-    // ***
     return 'turnRight() was called!'; 
   }
 
@@ -45,7 +49,6 @@ class Rover {
     
 
 
-    // ***
     return 'moveForward() was called!'
   }
 
@@ -56,8 +59,16 @@ class Rover {
     
 
 
-    // ***
     return 'moveBackwards() was called!';
+  }
+
+  // Este método deve verificar se o rover chegou à borda do canvas
+  checkBoardLimits() {
+    // O canvas tem tamanho 500px x 500px
+    // O canto superior esquerdo é a posição [0, 0] e o inferior direito [500, 500]
+    // O tamanho do rover (quadrado verde) é de 30px x 30px
+
+    // retorne true caso o rover tenha atingido alguma borda.
   }
 
   // Que tal trocar o quadrado verde por algo mais divertido?
