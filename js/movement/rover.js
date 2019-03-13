@@ -41,6 +41,7 @@ class Rover {
   }
 
   // Para mover o rover com as funções abaixo, pode ser útil usar a propriedade 'positionIncrement'
+  // Ao invés de incrementar a posição de 1 em 1 unidade
 
   // Complete a função para mover o rover para frente
   moveForward() {
@@ -64,9 +65,12 @@ class Rover {
 
   // Este método deve verificar se o rover chegou à borda do canvas
   checkBoardLimits() {
-    // O canvas tem tamanho 500px x 500px
-    // O canto superior esquerdo é a posição [0, 0] e o inferior direito [500, 500]
-    // O tamanho do rover (quadrado verde) é de 30px x 30px
+    // Sobre o Canvas:
+    // - Tem tamanho 500px x 500px
+    // - O canto superior esquerdo é a posição [0, 0] e o inferior direito [500, 500]
+    // Sobre o Rover:
+    // - O tamanho do rover (quadrado verde) é de 30px x 30px
+    // - O canto superior esquerdo é a posição [0, 0] e o inferior direito [30, 30]
 
     // retorne true caso o rover tenha atingido alguma borda.
   }
