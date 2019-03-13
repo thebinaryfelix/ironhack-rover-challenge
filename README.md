@@ -9,25 +9,28 @@ We are sending a rover to Mars and we need to program its movements so that we c
 ## Basic Information
 Our Mars Rover is kind of dumb. By that, we mean it can’t move and turn at the same time. This means that if the rover wants to move to the left, it’s first move must be a turn. Its next move will then be a step forward.
 
-In addition, our rover is on a test mission. NASA has placed the rover on a 10x10 grid to make sure all is well before we ship it off to mars.
-
-At a high level, what we will do in the exercise is the following:
+At a high level, what we will do in the challenge is the following:
 - Create a function to turn the rover.
 - Create a function to move the rover forwards or backwards based on its direction.
-- Create a function to receive a list of commands and move based off of those commands.
+
+## Where will you work?
+We have provided some starter files for you to work on!
+- Download this repository or fork it.
+- Open the file inside JS > movement > rover.js
+
+There, you already have some instructions to follow ;)
 
 ## Iteration 1 | The Rover Object
 
-Create an object to represent the rover. This object will have only one property for now: the direction.
 The direction property can contain one of four values: "N", "S", "E", or "W". The rover’s default direction will be "N" (north).
 
 ## Iteration 2 | Turning the Rover
-The rover has a direction attribute. We’ve already provided functions called turnLeft and turnRight that receive a rover object as an argument. Your job is to turn the rover in the appropriate direction based off of its current direction.
+The rover has a direction attribute. We’ve already provided methods called turnLeft and turnRight. Your job is to turn the rover in the appropriate direction based off of its current direction.
 
 Examples:
-Rover is facing North and turns left => Rover is now facing West
-Rover is facing West and turns left => Rover is now facing South
-Rover is facing North and turns right => Rover is now facing East
+Rover is facing North (N) and turns left => Rover is now facing West (W)
+Rover is facing West (W) and turns left => Rover is now facing South (S)
+Rover is facing North (N) and turns right => Rover is now facing East (E)
 
 ![Mars Rover][logo2]
 
@@ -48,12 +51,13 @@ Once the rover has a position, it’s time to move it.
 [logo4]: https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_596bde4c6f92c60447ea2e1644da168e.gif "Logo Title Text 2"
 
 ## Iteration 4 | Tracking
-We want to know where our rover has been. Create a property on the rover object that contains the coordinates of the places it has been. Call this property travelLog.
+We want to know where our rover has been. Create a property on the rover object that contains the coordinates of the places it has been. Call this property travelLog and it will be an Array.
 
-After each move, push the coordinates of the previous space to the travelLog array. After the rover has finished its moves, print out all of the spaces the rover has traveled over
+After each move, push the coordinates of the previous space to the travelLog array.
 
-## Bonus
-If you found the first few iterations of the exercise easy, try implementing the following features:
-- Obstacles - Create obstacles for the rover. If the rover’s next move would run it into an obstacle, stop it from moving forward and report the obstacle as found with console.log.
-- Other Rovers - Add additional rovers to the map. Have them take turns moving. If one rover is going to run into the other, you should stop the rover and console.log a message saying so.
-- Make sure your rover doesn’t accidentally roam off the map!
+## Classificatory
+Finally, let's implement the final functionalities to the rover!
+
+- Make sure your rover doesn’t accidentally roam off the map! Create a function to verify if the rover has reached the limits of the canvas.
+- After that, make the rover stop moving if it's already on the limit of the board.
+- Lastly, calling our functions on the console is so boring... Let's call our functions (turnLeft, turnRight, moveForward and moveBackwards) when pressing the arrows on the keyboard!
