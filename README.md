@@ -17,12 +17,13 @@ At a high level, what we will do in the challenge is the following:
 We have provided some starter files for you to work on!
 - Download this repository or fork it.
 - Open the file inside JS > movement > rover.js
+- Open the index.html on the browser
 
-There, you already have some instructions to follow ;)
+Inside the JS file you already have some instructions to follow ;)
 
 ## Iteration 1 | The Rover Object
 
-The direction property can contain one of four values: "N", "S", "E", or "W". The rover’s default direction will be "N" (north).
+The direction property can contain one of four values: `'N'`, `'S'`, `'E'`, or `'W'`. The rover’s default direction will be `'N'` (north).
 
 ## Iteration 2 | Turning the Rover
 The rover has a direction attribute. We’ve already provided methods called turnLeft and turnRight. Your job is to turn the rover in the appropriate direction based off of its current direction.
@@ -38,7 +39,7 @@ Rover is facing North (N) and turns right => Rover is now facing East (E)
 
 ## Iteration 3 | Moving the Rover
 In order to move the rover around, we have to keep track of the rover’s position.
-Positions can be represented as a pair of coordinates, x and y. Add two properties to your rover called x and y. Their default values will both be 0.
+Positions can be represented as a pair of coordinates, x and y. Add two properties to your rover called `x` and `y`. Their default values will both be 0.
 
 ![Mars Rover][logo3]
 
@@ -51,13 +52,13 @@ Once the rover has a position, it’s time to move it.
 [logo4]: https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_596bde4c6f92c60447ea2e1644da168e.gif "Logo Title Text 2"
 
 ## Iteration 4 | Tracking
-We want to know where our rover has been. Create a property on the rover object that contains the coordinates of the places it has been. Call this property travelLog and it will be an Array.
+We want to know where our rover has been. Create a property on the rover object that contains the coordinates of the places it has been. Call this property `travelLog` and it will be an Array.
 
 After each move, push the coordinates of the previous space to the travelLog array.
 
 ## Classificatory
 Finally, let's implement the final functionalities to the rover!
 
-- Make sure your rover doesn’t accidentally roam off the map! Create a function to verify if the rover has reached the limits of the canvas.
+- Make sure your rover doesn’t accidentally roam off the map! Complete the function `checkBoardLimits()` to verify if the rover has reached the limits of the canvas.
 - After that, make the rover stop moving if it's already on the limit of the board.
 - Lastly, calling our functions on the console is so boring... Let's call our functions (turnLeft, turnRight, moveForward and moveBackwards) when pressing the arrows on the keyboard!
