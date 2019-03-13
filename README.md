@@ -19,7 +19,7 @@ We have provided some starter files for you to work on!
 - Open the file inside JS > movement > rover.js
 - Open the index.html on the browser
 
-Inside the JS file you already have some instructions to follow ;)
+Inside the .js file you already have some instructions to follow ;)
 
 ## Iteration 1 | The Rover Object
 
